@@ -18,13 +18,16 @@
 var ciezarowka = {
 marka: 'Scania',
 model: 'V8 R730',
-rocznik: '2014',
+miejsce_produkcji: 'Szwecja',
 pokaz: function ()
 {
 document.write(this.marka + ' ' + this.model)
 }
 }
 ciezarowka.pokaz();
+ciezarowka.rocznik=2014;
+ciezarowka.wypisz=function() {alert('Rocznik: ' + this.rocznik)}
+ciezarowka.wypisz();
 </script>
 </head>
 <body>
