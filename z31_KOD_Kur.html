@@ -15,19 +15,19 @@
 <html>
 <head>
 <script type="text/javascript">
-var ciezarowka = {
-marka: 'Scania',
-model: 'V8 R730',
-miejsce_produkcji: 'Szwecja',
+var dom = {
+typ: 'Blizniak',
+metraz: '150m2',
+miejsce_budowy: 'Polska',
 pokaz: function ()
 {
-document.write(this.marka + ' ' + this.model)
+document.write(this.typ + ' ' + this.metraz)
 }
 }
-ciezarowka.pokaz();
-ciezarowka.rocznik=2014;
-ciezarowka.wypisz=function() {alert('Rocznik: ' + this.rocznik)}
-ciezarowka.wypisz();
+dom.pokaz();
+dom.rok_budowy=2014;
+dom.wypisz=function() {alert('Rok budowy: ' + this.rok_budowy)}
+dom.wypisz();
 </script>
 </head>
 <body>

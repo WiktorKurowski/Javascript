@@ -15,23 +15,23 @@
 <html>
  <head>
  <script type="text/javascript">
- function Spodnie(nazwisko_k,imie_k,zawod_k)//początek konstruktora
+ function Spodnie(typ_k,rozmiar_k,kroj_k)//początek konstruktora
 {
-this.nazwisko=nazwisko_k;
-this.imie=imie_k;
-this.zawod=zawod_k;
+this.typ=typ_k;
+this.rozmiar=rozmiar_k;
+this.kroj=kroj_k;
 }//koniec konstruktora
  Spodnie.prototype.wypisz_Kurowski = function () //definicja metody
  {
- alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod);
+ alert(this.typ + ' ' + this.rozmiar+ ' ' + this.kroj);
  };
-var osoba1 = new Spodnie("Kowalski", "Jan", "kierowca"); // nowy obiekt osoba1
-var osoba2 = new Spodnie('Nowak', 'Anna', 'sekretarka');
-osoba1.wypisz_Kurowski(); // uruchomienie metody wypisz() dotyczącej osoby 1
-osoba2.wypisz_Kurowski();
+var spodnie1 = new Spodnie("Jeansy", "L", "Baggy"); // nowy obiekt osoba1
+var spodnie2 = new Spodnie('Jeansy', 'S', 'Skinny');
+spodnie1.wypisz_Kurowski(); // uruchomienie metody wypisz() dotyczącej osoby 1
+spodnie2.wypisz_Kurowski();
  document.write("dostęp do właściwości"+"<br>");
 // poniżej dostęp do pól osoby1
- document.write("klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod);
+ document.write("Pierwsze spodnie: "+" "+spodnie1.typ+" "+spodnie1.rozmiar+" "+spodnie1.kroj);
  </script>
  </head>
 <body>
