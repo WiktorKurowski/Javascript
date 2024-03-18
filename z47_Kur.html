@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+ <head> 
+ <title>Sprawdzenie danych Kurowski </title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+ do {
+ var a_kur=parseFloat(prompt("a=",""));
+  var b_kur=parseFloat(prompt("b=",""));
+   var c_kur=parseFloat(prompt("c=",""));
+   document.write("Trojkat sie nie zamyka"+"<br>");
+ }
+  
+ while(!((a_kur>0)&&(b_kur>0)&&(c_kur>0)&&(a+b>c)&&(a+c>b)&&(b+c>a)));
+ document.write("Trojkat sie zamyka"+"<br>");
+ </script>
+</div>
+</body>
+</html>

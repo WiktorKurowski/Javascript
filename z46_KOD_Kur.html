@@ -1,0 +1,38 @@
+<Doctype html>
+<html>
+<head>
+<Meta charset="utf-8">
+<title> Strona zaliczeniowa JS </title>
+ <script language="JavaScript">
+  function okno_zamknij_Kurowski()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols="205" rows="25">
+<!DOCTYPE html> 
+ <head> 
+ <title>Sprawdzenie danych Kurowski </title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+ do {
+var licz1_kur=prompt("wysokość=","");
+ var h_kur=parseFloat(licz1_kur);
+ }
+ while ( h_kur<=0);
+ do {
+var licz1_kur=prompt("podstawę=","");
+ var a_kur=parseFloat(licz1_kur);
+ }
+ while(!( a_kur>0));
+var Pole_kur=a_kur*h_kur/2;
+ document.write("Pole="+Pole_kur.toFixed(2)+" cm^2"+"<br>");
+ </script>
+</div>
+</body>
+</html>
