@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Meta charset="utf-8">
+<title> Strona zaliczeniowa JS </title>
+ <script language="JavaScript">
+  function okno_zamknij_Kurowski()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols="205" rows="25">
+<html>
+    <body>
+        <script>
+            let R_Kur = parseFloat(prompt("Podaj promien R:"));
+            function pntCircle(R_Kur) {
+                let R = Math.floor(R_Kur);
+                let pkt = 0;
+                for (let i = -1 - R; i <= 1 + R; i++) {
+                    for (let j = -1 - R; j <= 1 + R; j++) {
+                        if (Math.sqrt(i**2 + j**2) <= R) {
+                            pkt++;
+                        }
+                    }
+                }
+                return pkt;
+            }
+            if (isNaN(R_Kur)) {
+                alert("Podano nieprawidlowy promien");
+            } else {
+                let pnt = pntCircle(R_Kur);
+                alert("Liczba punktow w kole o promieniu " + R_Kur + " wynosi: " + pnt);
+            }
+        </script>
+    </body>
+</html>
+</textarea>
